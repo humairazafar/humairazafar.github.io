@@ -58,3 +58,16 @@ function render(title, desc, url, author, country, source){
           $("table tbody").append(newsItem);
     
 }
+
+let dataTable = $('#example')
+
+$("#delete").click(function(){
+    dataTable.clear();
+    dataTable.row.add([
+        'new country',
+        'new source',
+        'new author',
+        'new url',
+        'new desc'
+    ]).draw();
+});
