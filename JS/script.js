@@ -4,7 +4,7 @@ const $title=$('#title');
 const $description=$('#description');
 const $image=$('#title');
 const $input = $('input[type="text"]');
-const $myTableId = $('#tbody');
+const $myTableId = $('tbody');
 let oldResult = " "
 
 let newsData, userInput;
@@ -41,13 +41,16 @@ function handleGetData(event){
 
 function readJson(){
 
+    $("#delete").click(function(){
+        $myTableId.empty()
+    })
     for (let i = 0 ; i < newsData.data.length ; i++)
     {
         row = newsData.data[i];
         render(row.title, row.description, row.url, row.author,row.country, row.source)    
     }
     
-    
+
 }
 
 function render(title, desc, url, author, country, source){
@@ -59,15 +62,15 @@ function render(title, desc, url, author, country, source){
     
 }
 
-let dataTable = $('#example')
+//let dataTable = $('#example')
 
-$("#delete").click(function(){
-    dataTable.clear();
-    dataTable.row.add([
-        'new country',
-        'new source',
-        'new author',
-        'new url',
-        'new desc'
-    ]).draw();
-});
+//$("#delete").click(function(){
+    //$myTableId.empty()
+    //dataTable.clear();
+    // dataTable.row.add([
+    //     'new country',
+    //     'new source',
+    //     'new author',
+    //     'new url',
+    //     'new desc'
+    // ]).draw()

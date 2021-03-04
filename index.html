@@ -5,15 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script defer src="./js/script.js"></script>
+    <link rel="stylesheet" href="css/style.css">
     <title>HZ Project</title>
 </head>
 <body>
     <h1>COUNTRY-NEWS</h1>
-    <button id="delete">click to delet old results</button>
+    <button id="delete">click to delete old results</button>
     <hr>
-    <table class="dataTable" id="example"></table>
+    <table class="dataTable" id="example"></table> 
     <form>
-        <input type="text" placeholder="Search by country">
+        <label for="Search by country">Enter Country Code here:</label>
+        <input type="text" placeholder="Search by country" required>
         <input type="submit" value="search">
     </form>
 

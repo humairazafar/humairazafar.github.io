@@ -1,13 +1,23 @@
 
+    h1{
+        color: orange;
+        position: relative;
+        font-family: sans-serif;
+        background-color: slategray;
+        font-size: 40px;
+        text-align: center;
+    }
     table{
         width: 100%;
         margin: 20px 0;
         border-collapse: collapse;
+     
     }
     table, th, td{
-        border: 1px solid #cdcdcd;
+        border: 1px solid #930b0b;
     }
     table th, table td{
         padding: 5px;
         text-align: left;
+        
     }
