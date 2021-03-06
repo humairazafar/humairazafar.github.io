@@ -9,7 +9,7 @@
 * JQuery Modal
 * NewsAPI
 
-# Future Improvements 
+## Future Improvements 
 * Layout Imporvements 
 * Research and utilize better API
 * Show 10 results per page
