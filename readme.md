@@ -12,6 +12,8 @@
 ## Getting there ..
 [CountryNews](https://humairazafar.github.io/)
 
+[netlify] (https://mystifying-payne-c7fe97.netlify.app)
+
 ## Future Improvements 
 * Layout Imporvements 
 * Research and utilize better API

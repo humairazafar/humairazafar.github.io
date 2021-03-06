@@ -27,7 +27,7 @@ function handleGetData(event){
         oldResult=userInput
     }
     $.ajax ({
-      url:'http://api.mediastack.com/v1/news?access_key=6c336f3fb514f8fef958a78a2372fb03&countries= ' + userInput
+      url:'https://api.mediastack.com/v1/news?access_key=6c336f3fb514f8fef958a78a2372fb03&countries= ' + userInput
     }) .then (
         (data) => {
             newsData = data;
