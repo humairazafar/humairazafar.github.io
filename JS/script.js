@@ -15,11 +15,11 @@ function handleGetData(event){
     //Remove all table rows
     event.preventDefault();
     
-    //function removeTableData(){
-       // $('#myTableData td').empty();
-      //}
-      function removeTableBody(){
-        $('#myTableId tbody').empty();
+    function removeTableData(){
+       $('#myTableData td').empty();
+      }
+    function removeTableBody(){
+      $('#myTableId tbody').empty();
     }
     userInput = $input.val();
     if (oldResult !== userInput) {
@@ -38,7 +38,7 @@ function handleGetData(event){
         }
     );
 }
-
+//creating loop to go over data, identifyiung it and sorting it by the titles 
 function readJson(){
 
     $("#delete").click(function(){
@@ -52,7 +52,7 @@ function readJson(){
     
 
 }
-
+//dynamic retrival of data and insertaion of data into  table
 function render(title, desc, url, author, country, source){
 
     newsItem="<tr><td>"+country+"</td><td>"+source+
