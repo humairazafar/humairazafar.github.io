@@ -9,6 +9,9 @@
 * JQuery Modal
 * NewsAPI
 
+## Getting there ..
+[CountryNews](https://humairazafar.github.io/)
+
 ## Future Improvements 
 * Layout Imporvements 
 * Research and utilize better API
